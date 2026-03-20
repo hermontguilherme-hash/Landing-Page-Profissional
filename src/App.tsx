@@ -59,7 +59,7 @@ export default function App() {
   return (
     <>
       {/* Navigation */}
-      <header className="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+      <header className="md:sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <a href="#" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
@@ -86,39 +86,31 @@ export default function App() {
 
       <main>
         {/* Hero Section */}
-        <section className="relative py-20 lg:py-32 overflow-hidden">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="grid gap-12 items-center text-center">
-              <div className="space-y-8 mx-auto">
-                <div className="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium bg-primary/10 text-primary dark:bg-primary/30 dark:text-blue-200 border border-primary/20">
-                  Wealth Management & Planejamento Patrimonial
-                </div>
-                <h1 className="text-4xl md:text-6xl font-black leading-tight tracking-tight text-slate-900 dark:text-white">
-                  Clareza, organização e estratégia para o seu patrimônio.
-                </h1>
-                <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-2xl mx-auto">
-                  Ajudamos você a organizar seus investimentos com rigor técnico e atendimento humano, independente do estágio da sua jornada financeira.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <a href="#contato" className="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all shadow-lg shadow-primary/20 inline-block">
-                    Agendar Diagnóstico Gratuito
-                  </a>
-                  <a href="#processo" className="border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 px-8 py-4 rounded-lg font-bold text-lg transition-all inline-block">
-                    Conhecer Metodologia
-                  </a>
-                </div>
-                <div className="flex items-center gap-4 pt-4 justify-center">
-                  <div className="flex -space-x-2">
-                    <div className="w-10 h-10 rounded-full border-2 border-background-dark bg-slate-400"></div>
-                    <div className="w-10 h-10 rounded-full border-2 border-background-dark bg-slate-500"></div>
-                    <div className="w-10 h-10 rounded-full border-2 border-background-dark bg-slate-600"></div>
-                  </div>
-                  <p className="text-sm text-slate-500 dark:text-slate-400 font-medium max-w-2xl mx-auto"><br/></p>
-                </div>
-              </div>
+        <section className="pt-12 pb-12 lg:pt-32 lg:pb-24 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto flex flex-col items-center text-center">
+          <div className="inline-flex items-center rounded-full px-3 py-1 lg:px-4 lg:py-1.5 text-xs lg:text-sm font-semibold bg-primary/10 text-primary dark:bg-primary/30 dark:text-blue-200 border border-primary/20 mb-4 lg:mb-8">
+            Wealth Management & Planejamento Patrimonial
+          </div>
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-black leading-tight tracking-tight text-slate-900 dark:text-white mb-4 lg:mb-6">
+            Clareza, organização e estratégia para o seu patrimônio.
+          </h1>
+          <p className="text-base sm:text-xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-2xl mb-6 lg:mb-10">
+            Ajudamos você a organizar seus investimentos com rigor técnico e atendimento humano, independente do estágio da sua jornada financeira.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 lg:gap-4 justify-center w-full sm:w-auto mb-6 lg:mb-12">
+            <a href="#contato" className="bg-primary hover:bg-primary/90 text-white px-6 py-3 lg:px-8 lg:py-4 rounded-xl font-bold text-base lg:text-lg transition-all shadow-lg shadow-primary/20 flex items-center justify-center w-full sm:w-auto">
+              Agendar Diagnóstico Gratuito
+            </a>
+            <a href="#processo" className="border-2 border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800/50 px-6 py-3 lg:px-8 lg:py-4 rounded-xl font-bold text-base lg:text-lg transition-all flex items-center justify-center w-full sm:w-auto">
+              Conhecer Metodologia
+            </a>
+          </div>
+          <div className="flex items-center justify-center gap-2 lg:gap-3">
+            <div className="flex -space-x-2 lg:-space-x-3">
+              <div className="w-8 h-8 lg:w-10 lg:h-10 rounded-full border-2 border-background-light dark:border-background-dark bg-slate-300 dark:bg-slate-700"></div>
+              <div className="w-8 h-8 lg:w-10 lg:h-10 rounded-full border-2 border-background-light dark:border-background-dark bg-slate-400 dark:bg-slate-600"></div>
+              <div className="w-8 h-8 lg:w-10 lg:h-10 rounded-full border-2 border-background-light dark:border-background-dark bg-slate-500 dark:bg-slate-500"></div>
             </div>
           </div>
-          <div className="absolute top-0 right-0 -z-10 w-1/2 h-full bg-primary/5 dark:bg-primary/10 blur-3xl rounded-full translate-x-1/2 -translate-y-1/2"></div>
         </section>
 
         {/* Pain Points Section */}
@@ -165,7 +157,7 @@ export default function App() {
         <section className="py-24" id="processo">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col lg:flex-row gap-16 items-start">
-              <div className="lg:w-1/3 sticky top-24">
+              <div className="lg:w-1/3 lg:sticky lg:top-24">
                 <h2 className="text-primary dark:text-blue-400 font-bold uppercase tracking-widest text-sm mb-4">Como eu ajudo</h2>
                 <h3 className="text-4xl font-black mb-6 leading-tight">O caminho para uma gestão patrimonial profissional.</h3>
                 <p className="text-slate-600 dark:text-slate-400 mb-8">Nossa metodologia é dividida em três pilares fundamentais para garantir que cada centavo esteja alinhado com seu propósito.</p>
